@@ -1,0 +1,424 @@
+
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #263449;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.section {
+    padding: 65px 0;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading h2 {
+    color: #17365d;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.section-heading p {
+    color: #64748b;
+}
+
+
+/* Header */
+
+header {
+    background-color: white;
+    padding: 18px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #176b87;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #263449;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #176b87;
+}
+
+
+/* Home Section */
+
+.hero {
+    background-color: #e4f3f7;
+    padding: 70px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 260px;
+}
+
+.hero-text h2 {
+    color: #17365d;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    color: #53647a;
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 260px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    background-color: #176b87;
+    color: white;
+    padding: 11px 22px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #10485c;
+    transform: translateY(-3px);
+}
+
+
+/* About Us */
+
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+
+/* Destinations */
+
+.destination-section {
+    background-color: #eaf3f8;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.destination-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.destination-card:hover {
+    transform: translateY(-6px);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 18px;
+}
+
+.card-info h3 {
+    color: #176b87;
+    margin-bottom: 8px;
+}
+
+.card-info p {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 10px;
+}
+
+.card-info span {
+    font-size: 13px;
+    font-weight: bold;
+    color: #17365d;
+}
+
+
+/* Holiday Packages */
+
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.package-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+}
+
+.package-card h3 {
+    color: #176b87;
+    margin-bottom: 15px;
+}
+
+.package-card p {
+    margin: 9px 0;
+}
+
+.price {
+    color: #16804a;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.package-card ul {
+    padding-left: 22px;
+    margin: 15px 0 22px;
+}
+
+.package-card li {
+    margin-bottom: 8px;
+}
+
+.note {
+    text-align: center;
+    margin-top: 20px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+
+/* Itinerary */
+
+.itinerary-section {
+    background-color: #eaf3f8;
+}
+
+.itinerary-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.day-card {
+    background-color: white;
+    padding: 22px;
+    margin-bottom: 18px;
+    border-left: 5px solid #176b87;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.day-card h3 {
+    color: #176b87;
+    margin-bottom: 8px;
+}
+
+
+/* Inquiry Form */
+
+.inquiry-section {
+    background-color: #f8fafc;
+}
+
+.inquiry-form {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.inquiry-form label {
+    display: block;
+    font-weight: bold;
+    margin: 14px 0 7px;
+}
+
+.inquiry-form input,
+.inquiry-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.inquiry-form input:focus,
+.inquiry-form select:focus {
+    outline: none;
+    border-color: #176b87;
+}
+
+.inquiry-form button {
+    margin-top: 22px;
+}
+
+
+/* Contact Section */
+
+.contact-content {
+    max-width: 650px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.contact-content p {
+    margin: 12px 0;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 850px) {
+
+    .destination-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .package-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-text h2 {
+        font-size: 34px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 45px 0;
+    }
+
+    .hero-text h2 {
+        font-size: 30px;
+    }
+
+    .destination-grid,
+    .package-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image img {
+        height: 230px;
+    }
+
+    .section {
+        padding: 45px 0;
+    }
+
+}
